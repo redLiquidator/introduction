@@ -165,80 +165,10 @@
   </style>
   
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50"  class="bg-1">
-	<!-- head(top right): login, user id, user money
-	quiz list(middle) -->
-	<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/#">Hello, player1988 | 2100 points</a></li>
-        <li><a href="/quiz">Quiz</a></li>
-        <li><a href="/login">Login</a></li> 
-        <li><a href="/myAccount">My Account</a></li>
-        <li><a href="/contact">Contact</a></li>
-<!--         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li> -->
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!--label-default  label-primary  label-success  label-info  label-warning  label-danger-->
-<!-- embryo | African Elephant(Average 70 years)  | Nile -->
-  <div class="container" >
-   <h3 class="text-center">QUIZ EVENT </h3>  
-    <p class="text-center">* Answer quiz questions and get points. 
-    <br> * Quizzes are updated and discarded periodically. 
-    <br> * You are given only 3 chances to answer each question.</p>
-  </div>  
-	
-    <div class="container2" >
-	    <table>
-			 <tr class="list-group"  th:each="quizList: ${quizList}">
-			    <td class="list-group-item" />[[${quizList.question}]]<span class="label label-info">1 day left</span><span class="badge">600 points</span><td/>
-			</tr>
-		</table>
-    </div>
- 
-      <!--  pagination 1.show 5 quizzes in each page-->
-      <ul class="pagination" >	    
-	      <li><a href="#" class="pageNo">Previous</a></li>
-		  <li class="active"><a href="#" class="pageNo">1</a></li>
-		  <li><a href="#"  class="pageNo">2</a></li>
-		  <li><a href="#"  class="pageNo">3</a></li>
-		  <li><a href="#" class="pageNo">Next</a></li>
-    </ul>
-<!-- access index file | http://localhost:8180/  -->
+<body>
+intro
 </body>
 <script>
-//selector
-let pageNo = document.querySelector("#pageNo");/* pagination */
-pageNo.addEventListener("click", ()=>{		
 
-	pageNo = $('#pageNo').val();
-	console.log("pageNo"+pageNo);
-	//call ajax
-	/* $.get("/pageNo", 
-			{ dnaLength: dlength}, 
-			function(data, status) { 
-				console.log(data);
-				console.log(status);
-				seq = data.sequence;
-
-				$("#prep1-result-another").html('Complementary Strand :  5\'-'+complementarySeq+'-3\''); 		
-			} ); 
-		
-		 //notice1, prep2-container
-		 $('#notice1').show();	 
-		 $('#prep2-subcontainer1').show();	*/
-		});
 </script>
 </html>

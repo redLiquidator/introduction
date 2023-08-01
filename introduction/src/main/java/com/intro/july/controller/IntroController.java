@@ -13,9 +13,9 @@ public class IntroController{
 
 	
 	@GetMapping("/intro")   
-	public ModelAndView quiz() {
-		//assign quiz.html file to mv
-	      ModelAndView mv = new ModelAndView("quiz.html");
+	public ModelAndView intro() {
+		//assign intro.html file to mv
+	      ModelAndView mv = new ModelAndView("intro.html");
 	             
 	      logger.info("+++++++++++intro++++++++++++");		  
 		  
